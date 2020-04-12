@@ -8,8 +8,8 @@ const Home = () => {
         </a>
       </article>
     </div>
-  `;
-  return view;
+  `
+  return view
 }
 
-export default Home;
+export default Home()
