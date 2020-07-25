@@ -5,14 +5,15 @@ const Home = async () => {
   const view = `
     <div class="Characters">
       ${characters.results.map(character => `
-        <article class="Character-item">
+        <article class="Characters__item">
           <a href="#/${character.id}/">
-            <img src="${character.image}" alt="name" >
+            <img src="${character.image}" alt="${character.name}" >
             <h2>${character.name}</h2>
           </a>
         </article>
       `).join('')}
     </div>
+    <button class="button load-more" id="loadMore">Load more</button>
   `
   return view
 }

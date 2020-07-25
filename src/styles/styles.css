@@ -8,6 +8,17 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.button {
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+}
+
 .Header-main {
   display: flex;
   justify-content: space-between;
@@ -69,7 +80,7 @@ body {
   margin: 20px;
 }
 
-.Characters-item {
+.Characters__item {
   text-decoration: none;
   box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
   border-radius: 5px;
@@ -79,13 +90,13 @@ body {
   animation-name: fade;
 }
 
-.Characters-item img {
+.Characters__item img {
   width: 100%;
   height: auto;
   border-radius: 5px 5px 0 0;
 }
 
-.Characters-item h2 {
+.Characters__item h2 {
   font-size: 18px;
   font-weight: 300;
   padding: 5px 10px;
@@ -93,7 +104,7 @@ body {
   justify-content: space-between;
 }
 
-.Characters-item a {
+.Characters__item a {
   text-decoration: none;
   color: #026C86;
 }
@@ -108,15 +119,21 @@ body {
 }
 
 .Main-loading {
+  animation: spin 2s linear infinite;
   border: 4px solid #f3f3f3;
   border-top: 4px solid #3498db;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  animation: spin 2s linear infinite;
+  height: 100px;
+  margin: auto;
+  width: 100px;
 }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.load-more {
+  display: block;
+  margin: 50px auto;
 }
