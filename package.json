@@ -13,11 +13,11 @@
   "author": "Bernardo Ayala <ba@bernardoayala.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.10.5",
+    "@babel/core": "^7.11.1",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^5.1.1",
     "html-webpack-plugin": "^4.3.0",
-    "webpack": "^4.44.0",
+    "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   }
