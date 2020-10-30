@@ -5,9 +5,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../dist'),
     filename: 'main.js'
   },
+  mode: 'production',
   resolve: {
     extensions: ['.js'],
   },
@@ -31,9 +32,13 @@ module.exports = {
         favicon: './public/favicon.png'
       }
     ),
-    new CopyWebpackPlugin([{
-      from: './src/styles/styles.css',
-      to: ''
-    }])
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: './src/styles/styles.css',
+          to: ''
+        }
+      ]
+    })
   ]
 }
