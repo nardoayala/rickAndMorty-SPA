@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config config/webpack.prod.js",
-    "start": "webpack serve --config config/webpack.dev.js"
+    "start": "webpack serve --config config/webpack.dev.js",
+    "lint": "eslint --fix src/**/*.js",
+    "format": "prettier --write src/**/*.{html,css,js}"
   },
   "keywords": [
     "javascript"
@@ -16,7 +18,11 @@
     "@babel/core": "^7.12.3",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^6.2.1",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
     "html-webpack-plugin": "^4.5.0",
+    "prettier": "^2.2.1",
     "webpack": "^5.3.2",
     "webpack-cli": "^4.1.0",
     "webpack-dev-server": "^3.11.0"

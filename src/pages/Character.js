@@ -1,9 +1,9 @@
-import getHash from '../utils/getHash'
-import getData from '../utils/getData'
+import getHash from '../utils/getHash';
+import getData from '../utils/getData';
 
 const Character = async () => {
-  const id = getHash()
-  const character = await getData(id)
+  const id = getHash();
+  const character = await getData(id);
   const view = `
     <div class="Characters-inner">
       <article class="Characters-card">
@@ -19,8 +19,8 @@ const Character = async () => {
         <h3>Last Location: <span>${character.location.name}</span></h3>
       </article>
     </div>
-  `
-  return view
-}
+  `;
+  return view;
+};
 
-export default Character
+export default Character;
