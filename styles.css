@@ -27,7 +27,7 @@ body {
 
 .Header a {
   text-decoration: none;
-  color: #15302C;
+  color: #15302c;
 }
 
 .Main {
@@ -53,7 +53,8 @@ body {
 
 .Characters-card {
   text-decoration: none;
-  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+    1px 3px 8px rgba(39, 44, 49, 0.03);
   border-radius: 5px;
   margin: 0 0 20px 0;
   display: block;
@@ -82,7 +83,8 @@ body {
 
 .Characters__item {
   text-decoration: none;
-  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+    1px 3px 8px rgba(39, 44, 49, 0.03);
   border-radius: 5px;
   margin: 0 0 20px 0;
   display: block;
@@ -106,7 +108,12 @@ body {
 
 .Characters__item a {
   text-decoration: none;
-  color: #026C86;
+  color: #026c86;
+}
+
+.load-more {
+  display: block;
+  margin: 50px auto;
 }
 
 @keyframes fade {
@@ -129,11 +136,55 @@ body {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.load-more {
-  display: block;
-  margin: 50px auto;
+.about {
+  padding: 1rem 0;
+  font-size: 1rem;
+  text-align: center;
+}
+@media screen and (min-width: 425px) {
+  .about {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about {
+    padding: 4rem 0;
+  }
+}
+.about__container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+.about__title {
+  font-size: 2rem;
+}
+@media screen and (min-width: 425px) {
+  .about__title {
+    font-size: 3rem;
+  }
+}
+.about__tools ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.about__tools ul li {
+  margin-bottom: 15px;
+}
+.about__tools ul a {
+  color: rgba(0, 116, 236, 0.93);
+  text-decoration: none;
+}
+.about__tools ul a:hover {
+  text-decoration: underline;
 }
